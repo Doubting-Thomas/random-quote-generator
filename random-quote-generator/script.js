@@ -8,6 +8,7 @@ const getQuote = async function () {
     const res = await fetch(
       "https://api.whatdoestrumpthink.com/api/v1/quotes/random"
     );
+    if (!res.ok) throw new Error("Problem loading data.");
     const data = await res.json();
     renderQuote(data.message);
   } catch (err) {
