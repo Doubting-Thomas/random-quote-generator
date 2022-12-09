@@ -19,7 +19,11 @@ html {
 
 .heading-secondary {
   font-size: 2rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+.quote {
+  margin-bottom: 5rem;
 }
 
 .btn {

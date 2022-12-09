@@ -1,8 +1,6 @@
 "use strict";
-// const quote = document.querySelector(".quote");
 const btn = document.querySelector(".btn");
-
-// const api_url = "https://forkify-api.herokuapp.com/api/v2/recipes/";
+const quote = document.querySelector(".quote");
 
 const getQuote = async function () {
   try {
@@ -19,6 +17,5 @@ const getQuote = async function () {
 btn.addEventListener("click", getQuote);
 
 function renderQuote(quotes) {
-  const quote = document.querySelector(".quote");
   quote.textContent = quotes;
 }
