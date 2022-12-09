@@ -1,0 +1,42 @@
+body {
+  font-family: cursive;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right, #456fe8, #19b0ec);
+  color: #f9f5e0;
+
+  margin: 0 10rem;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.heading-main {
+  font-size: 3rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  margin-bottom: 10rem;
+}
+
+.btn {
+  background-color: #f9f5e0;
+  color: #456fe8;
+
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+}
+
+.btn:active {
+  transform: translate(0);
+}
