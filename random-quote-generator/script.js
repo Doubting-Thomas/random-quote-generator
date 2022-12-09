@@ -2,6 +2,7 @@
 const btn = document.querySelector(".btn");
 const quote = document.querySelector(".quote");
 
+// Fetch the API
 const getQuote = async function () {
   try {
     const res = await fetch(
@@ -14,8 +15,10 @@ const getQuote = async function () {
   }
 };
 
+// Event listener
 btn.addEventListener("click", getQuote);
 
+// Function to display quotes
 function renderQuote(quotes) {
   quote.textContent = quotes;
 }

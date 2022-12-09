@@ -29,6 +29,8 @@ html {
 .btn {
   background-color: #f9f5e0;
   color: #456fe8;
+  font-family: inherit;
+  font-weight: 700;
 
   padding: 1rem 1.5rem;
   border-radius: 1rem;
