@@ -1,13 +1,12 @@
 "use strict";
 const btn = document.querySelector(".btn");
 const quote = document.querySelector(".quote");
+const api_url = "https://api.whatdoestrumpthink.com/api/v1/quotes/random";
 
 // Fetch the API
 const getQuote = async function () {
   try {
-    const res = await fetch(
-      "https://api.whatdoestrumpthink.com/api/v1/quotes/random"
-    );
+    const res = await fetch(api_url);
     if (!res.ok) throw new Error("Problem loading data.");
     const data = await res.json();
     renderQuote(data.message);
